@@ -1,0 +1,157 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+body {
+    background-color: #929292;
+}
+
+a {
+    text-decoration: none;
+}
+
+li {
+    list-style: none;
+}
+
+
+.header, .footer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header {
+    background-image: linear-gradient(180deg, rgb(195,197,202), transparent);
+}
+
+#logo {
+    margin-left: 140px;
+}
+
+#logo img {
+    width: 250px;
+}
+
+#menu ul {
+    display: flex;
+    gap: 20px; /* Espaçamento entre os itens do menu */
+    margin-right: 100px; /* Espaçamento da borda direita */
+}
+
+#menu li:not(:last-child)::after {
+    content: '|'; /* Conteúdo do separador (pode ser um caractere, imagem, etc.) */
+    margin-left: 10px; /* Espaçamento entre o texto e o separador */
+    color: #333; /* Cor do separador */
+}
+
+#menu a {
+    text-decoration: none;
+    color: #333; /* Cor do texto do link */
+    transition: color .5s ease;
+}
+
+#menu a:hover {
+    color: rgb(140, 45, 106); /* Cor do texto do link ao passar o mouse */
+    
+}
+
+/* ESTILIZAÇÃO DO MAIN */
+
+#main {
+    display: flex;
+    min-height: 395px;
+}
+
+.little {
+    margin-right: 120px;
+}
+
+/* Article */
+
+#article {
+    margin-top: 10px;
+    margin-left: 150px;
+    font-weight: bolder;
+}
+
+.h4,
+.h2 {
+    color: #008E86;
+}
+
+.articleContainer {
+    display: flex;
+    width: 90%;
+
+}
+
+#article p,
+.articleContainer p {
+    width: 90%;
+    font-weight: 300;
+    color: 454545;
+}
+
+.articleContainer img {
+    width: 40%;
+    margin-left: 20px;
+    margin-bottom: 15px;
+}
+
+/* Footer */
+
+#footer {
+    height: 130px;
+    background-image: linear-gradient(360deg, rgb(73, 73, 73), transparent);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.footerContainer {
+    width: auto;
+    margin-right: 100px;
+    margin-left: 150px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.footerLine {
+    content: '';
+    width: 900px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    display: block;
+    border-top: 5px solid rgb(0, 142, 134);
+}
+#footerMenu {
+    margin-left: 100px;
+}
+
+#footerMenu ul {
+    display: flex;
+    gap: 20px; /* Espaçamento entre os itens do menu */
+    margin-right: 150px; /* Espaçamento da borda direita */
+}
+
+
+#footerMenu a {
+    text-decoration: none;
+    color: #333; /* Cor do texto do link */
+    transition: color .5s ease;
+}
+
+#footerMenu a:hover {
+    color: rgb(140, 45, 106); /* Cor do texto do link ao passar o mouse */
+    
+}
+
+.copy {
+    color: rgb(214, 214, 214);
+}
